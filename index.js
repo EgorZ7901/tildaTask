@@ -66,8 +66,8 @@ function initFeedback() {
 
     function saveFeedback() {
         localStorage.setItem('feedback', feedbackInput.value);
+        closeForm();
         alert('Ваш фидбэк: ' + feedbackInput.value + '\nСпасибо за ваше мнение. Мы выйдем с вами на связь в ближайшее время!');
-        closeForm()
     }
 
     function closeForm() {
