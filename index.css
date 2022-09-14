@@ -1,0 +1,86 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.rate-container {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.20);
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+
+.rate {
+    font-weight: 1000;
+    line-height: 10px;
+    font-size: 20px;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    margin: auto;
+}
+
+.feedback {
+    margin: 10px 0;
+}
+
+.review-container {
+    text-align: center;
+    width: 300px;
+    min-height: 150px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+    padding: 15px;
+    align-items: center;
+}
+
+.feedback {
+    max-width: 250px;
+    width: 250px;
+}
+
+.submit-button {
+    width: fit-content;
+}
+
+.review-container.visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-container h2 {
+    margin: 10px 0;
+}
+
+.rate.active.low.hovered,
+.rate.low.selected {
+    color: red;
+}
+
+.rate.active.neutral.hovered,
+.rate.neutral.selected {
+    color: grey;
+}
+
+.rate.active.high.hovered,
+.rate.high.selected {
+    color: greenyellow;
+}
+
+.rate:before {
+    content: '★';
+}
+
+.rate.active:hover {
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
