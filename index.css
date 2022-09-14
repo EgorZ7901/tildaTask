@@ -62,7 +62,7 @@
 
 .rate.active.neutral.hovered,
 .rate.neutral.selected {
-    color: grey;
+    color: yellow;
 }
 
 .rate.active.high.hovered,
